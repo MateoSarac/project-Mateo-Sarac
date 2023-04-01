@@ -23,8 +23,8 @@
             class="btn btn-outline-primary"
           >
             Show/hide text
-          </button>
-          <div>{{ movie.opis }}</div>
+          </button >
+          <div *ngIf="showOpis">{{ movie.opis }}</div>
         </td>
         <td [style.width.%]="rowWidth">
           <img

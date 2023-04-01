@@ -65,5 +65,8 @@ export class MoviesComponent {
   imageWidth: number = 130;
   rowWidth: number = 100 / 7;
 
-  showhide() {}
+  showOpis: boolean = false;
+  showhide() {
+    this.showOpis = !this.showOpis
+  }
 }
